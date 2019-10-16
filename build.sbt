@@ -8,7 +8,7 @@ libraryDependencies ++= Seq(
   // included to show that it's not just mysterious greyed-out instrumentation that actually works --  curls to
   // http://localhost:8080/hi do not show up on http://0.0.0.0:9095/ when scala-compiler is included, but do when it's not
   "io.kamon"          %% "kamon-prometheus" % "2.0.0",
-  "org.scala-lang"    % "scala-compiler"    % scalaVersion.value // uncomment this and it works
+  "org.scala-lang"    % "scala-compiler"    % scalaVersion.value // comment this out and it works
 )
 
 fork := true
